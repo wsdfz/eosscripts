@@ -1,0 +1,14 @@
+#!/bin/sh
+
+
+pkill -2 nodeos && sleep 20 
+
+ps -ef | grep "nodeos"
+echo Make sure nodeos quitted
+read
+
+rm nohup.out
+
+nohup nodeos --contracts-console -d /mnt/data &
+
+
