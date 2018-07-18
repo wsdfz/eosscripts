@@ -4,6 +4,12 @@ cd ../eos
 
 git pull
 
+if [ "$1" != "" ] ; then
+	echo Checkout $1
+	git checkout $1
+fi
+
+
 git submodule update --init --recursive
 
 ./eosio_build.sh
