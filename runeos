@@ -1,0 +1,12 @@
+#!/bin/sh
+
+
+pkill -2 nodeos && sleep 20 
+
+ps -ef | grep "nodeos"
+
+rm nohup.out
+
+
+nohup nodeos -d /mnt/data &
+

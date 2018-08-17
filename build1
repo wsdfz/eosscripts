@@ -12,5 +12,8 @@ fi
 
 git submodule update --init --recursive
 
-./eosio_build.sh
+./eosio_build.sh -s EOS
+
+cd build
+make install
 

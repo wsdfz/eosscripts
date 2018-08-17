@@ -9,6 +9,9 @@ read
 
 rm nohup.out
 
-nohup nodeos --contracts-console -d /mnt/data &
+# nohup nodeos --contracts-console -d /mnt/data &
 
+# nohup nodeos --verbose-http-errors -d /mnt/data &
+
+nohup nodeos -d /mnt/data &
 
