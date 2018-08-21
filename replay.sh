@@ -1,3 +1,5 @@
 #!/bin/sh
 
-nohup ./_replay.sh &
+./run_mongo.sh
+
+nohup ./_replay.sh > replay.log &
