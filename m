@@ -1,9 +1,3 @@
-#!/bin/sh
-
-while true ; do
-        date
-        free | grep "Mem:"
-
         mem=`free -m | grep "Mem" | awk -F " " '{print $4}'`
 
         if [[ mem < 100 ]] ; then
@@ -13,8 +7,4 @@ while true ; do
 
           sleep 300
           nodeos -d /mnt/data
-        fi
-
-        sleep 900
-done
-
+        end if
