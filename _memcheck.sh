@@ -12,7 +12,7 @@ while true ; do
           pkill -2 nodeos
 
           sleep 300
-          nodeos -d /mnt/data
+          nodeos -d /mnt/data > eos.log 2>&1
         fi
 
         sleep 900
